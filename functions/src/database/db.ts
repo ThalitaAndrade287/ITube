@@ -1,3 +1,3 @@
 import * as admin from 'firebase-admin';
 
-export let db = admin.firestore(); 
+export let db = () => { return admin.firestore() }
