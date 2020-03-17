@@ -5,29 +5,18 @@ import * as express from "express";
 import { Request, Response } from "express";
 import * as cors from "cors";
 import * as admin from "firebase-admin";
-import * as firebase from 'firebase-admin';
+import * as firebase from "firebase";
 import IdGenerator from "./src/services/idGenerator";
 import FirebaseAutenticationGenerateToken from "./src/services/firebaseAutentication";
+import { firebaseConfig } from "./firebaseConfig";
 
 // Start writing Firebase Functions
 // https://firebase.google.com/docs/functions/typescript
 
-const firebaseConfig = {
-  apiKey: "AIzaSyCXEGBBWv0PND3tiYa8FD94dM9pmnNiJUQ",
-  authDomain: "itube-back-end.firebaseapp.com",
-  databaseURL: "https://itube-back-end.firebaseio.com",
-  projectId: "itube-back-end",
-  storageBucket: "itube-back-end.appspot.com",
-  messagingSenderId: "234573862207",
-  appId: "1:234573862207:web:c15248dd3b52191b50af8a"
-};
-
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 
-admin.initializeApp({
-    credential: admin.credential.cert(require('/Thalita/Documentos/TCC - F4/ITube/functions/itube-back-end-firebase-adminsdk-rkxnq-095041f20a.json'))
-});
+admin.initializeApp();
 
 const app = express();
 

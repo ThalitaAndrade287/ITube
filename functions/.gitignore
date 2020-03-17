@@ -6,4 +6,5 @@
 typings/
 
 node_modules/
-itube-back-end-firebase-adminsdk-rkxnq-095041f20a.json
+
+fireBaseConfig.ts
