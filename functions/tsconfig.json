@@ -9,5 +9,5 @@
     "target": "es2017"
   },
   "compileOnSave": true,
-  "include": ["src", "index.ts", "firebaseConfig.ts"]
+  "include": ["src", "index.ts", "firebaseConfig.ts", "firebaseConfig.ts"]
 }
