@@ -1,6 +1,12 @@
 import styled from 'styled-components';
 import TextField from '@material-ui/core/TextField';
 
+export const ContainerSignup = styled.form `
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+`
+
 export const InputName = styled(TextField) `
     margin-top: 20px;
     width: 40vw;
@@ -31,10 +37,14 @@ export const InputPasswordConfirm = styled(TextField)`
     margin-bottom: 16px;
 `
 
-export const ContentSignUp = styled.form `
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+export const InputPhoto = styled(TextField)`
+    margin-top: 16px;
+    width: 40vw;
+    height: 56px;
+`
+
+export const ContentSignUp = styled.div `
+  
 `
 
 export const TextRegister = styled.div `
