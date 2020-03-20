@@ -20,7 +20,7 @@ export default function Header() {
                 <Link to="/">
                     <ImgLogo className="logo" src={logo} alt="Logo Projeto" />
                 </Link>
-                <h2> FutureTube</h2>
+                <h2> ITube</h2>
             </Logo>
 
             <SearchField>
