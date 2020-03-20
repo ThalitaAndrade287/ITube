@@ -15,7 +15,8 @@ import Visibility from '@material-ui/icons/Visibility';
 import VisibilityOff from '@material-ui/icons/VisibilityOff';
 import InputAdornment from '@material-ui/core/InputAdornment';
 import IconButton from '@material-ui/core/IconButton';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import { login } from '../../actions';
 
 class Login extends React.Component {
     constructor(props) {

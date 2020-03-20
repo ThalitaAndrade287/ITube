@@ -39,5 +39,21 @@ export const signUp = (name, email, dateOfBirth, password, photo) => async dispa
     }
 }
 
+const mockedUser = {
+    email: "thalita.andrade@gmail.com",
+    password: "123456"
+  }
+
+export const login = (email, password) => dispatch => {
+    try {
+        dispatch(success(mockedUser))
+        dispatch(push("/"))
+    } catch (e) {
+        dispatch(failure(e))
+    }
+
+}
+
+
 
 
