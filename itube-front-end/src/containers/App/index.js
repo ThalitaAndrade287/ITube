@@ -1,11 +1,12 @@
 import React from 'react';
+import Routes from '../Router/';
+import { ConnectedRouter } from 'connected-react-router';
+import { history } from '../../store'
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-     Hello
-    </div>
+    <ConnectedRouter history={history}>
+      <Routes />
+    </ConnectedRouter>
   );
 }
-
-export default App;

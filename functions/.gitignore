@@ -1,0 +1,10 @@
+## Compiled JavaScript files
+**/*.js
+**/*.js.map
+
+# Typescript v1 declaration files
+typings/
+
+node_modules/
+itube-back-end-firebase-adminsdk-rkxnq-095041f20a.json
+firebaseConfig.ts
